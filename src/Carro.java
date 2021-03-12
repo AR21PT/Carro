@@ -1,4 +1,17 @@
 
+
+/**
+ * A classe Carro contém métodos para realizar as operações  básicas.
+ * 
+ * <ul>
+ * <li> Meter combustível </li>
+ *   <li> Andar </li>
+ *    <li> Parar </li>
+ * </ul>
+ * @author AR21PT
+ *
+ */
+
 public class Carro {
 	
 	static private final double consumo=5.5; // litros por 100 klm
@@ -30,6 +43,14 @@ public class Carro {
 	
 	// Métodos 
 	
+	/**
+	 * Meter Combustível
+	 * 
+	 * @param quantidade quantidade do combustivel
+	 * 
+	 *
+	 */
+	
 	public void meterCombustivel( double quantidade) { 		
 		
 		// Devia testar se Transborda o depósito
@@ -38,6 +59,12 @@ public class Carro {
 		
 		
 	}
+	
+	/**
+	 * Meter combustível
+	 * 
+	 * @return litrosMeter litros a meter 
+	 */
 	
 	// atestar o depósito
 	public double meterCombustivel() {
@@ -49,6 +76,13 @@ public class Carro {
 		
 		return litrosMeter;
 	}
+	
+	/**
+	 * Distancia em KM
+	 * 
+	 * @param distancia distancia percorrida
+	 * @return true or false 
+	 */
 	
 	
 	// distancia em klm
@@ -70,12 +104,26 @@ public class Carro {
 			
 	}
 	
+	
+	/**
+	 *  simula o ato de conduzir o veículo ao longo de uma certa distância;
+	 * 
+	 * @return true 
+	 */
+	
+	
 	public boolean parar() {
 		
 		// se estiver a andar pára 
 		// falta a flag que indica se o carro está em andamento
 		return true;
 	}
+	
+	/**
+	 *  indica o número de km que podem ser percorridos com o atual nível do depósito
+	 * 
+	 * @return autonomia 
+	 */
 	
 	// kmCombustivel( )    
 	public double obterAutonomia() {
